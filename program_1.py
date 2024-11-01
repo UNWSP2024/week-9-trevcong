@@ -3,7 +3,6 @@
 #TITLE: Count lines in txt file
 
 
-
 #FUNCTION: This function counts the lines in a .txt file with a read operation
 #RETURN: Number of lines
 def count_file_lines():

@@ -1,6 +1,6 @@
 #AUTHOR: Trevor Conger UNWSP
 #DATE: 10/30/24
-#TITLE: Generate numbers!
+#TITLE: Generate numbers!!
 
 import random
 
