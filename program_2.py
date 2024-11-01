@@ -1,5 +1,19 @@
-# Program #2: Random Number File Writer
-# Write a program that writes a series of random numbers (up to 1000) to a file.
-# Each random number should be in the range of 1 through 500. 
-# The application should let the user specify how many random numbers the file will hold 
-# (up to 1000).
+#AUTHOR: Trevor Conger UNWSP
+#DATE: 10/30/24
+#TITLE: Generate numbers!
+
+import random
+
+def main():
+    userInput = int(input("How many numbers would you like to be generated"))
+    generateNumbers(userInput)
+
+def generateNumbers(x):
+    file1 = open("numbers.txt", "a") 
+    for i in range(x): 
+        numberRandom = random.randint(1, 500)
+        file1.write(str(numberRandom) + "\n")
+    file1.close() 
+
+if __name__ == "__main__":
+    main()
